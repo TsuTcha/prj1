@@ -1,7 +1,6 @@
-import numpy as np
+import streamlit as st
 
-print("Hello, world!")
+input_num = st.number_input('Input a number', value=0)
 
-a = np.ndarray([1,1])
-
-print(a)
+result = input_num ** 2
+st.write('Result: ', result)
